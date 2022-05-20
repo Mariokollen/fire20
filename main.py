@@ -4,12 +4,12 @@ function Gjennomsnitt (tall: number, tall2: number, tall3: number) {
 let blå = 0
 let grønt = 0
 let rødt = 0
-let tabell: number[] = []
+let tabell = [0, 1]
 let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
-strip.setBrightness(255)
+strip.setBrightness(200)
 for (let indeks = 0; indeks <= strip.length(); indeks++) {
-    tabell.push(randint(0, 100))
+    tabell.push(0 + 100)
 }
 basic.forever(function () {
     for (let indeks = 0; indeks <= strip.length(); indeks++) {
